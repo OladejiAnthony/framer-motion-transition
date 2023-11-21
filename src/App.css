@@ -1,46 +1,58 @@
-* {
+ * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
   }
   
-.app {
-    padding: 2rem
-}
-
-.box-container {
-    padding-bottom: 7rem;
-}
-
-.box {
-    width: 15rem;
-    height: 15rem;
-    background-color: aquamarine;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .nav-options {
+    display: flex;
+  }
+  .nav-option {
+    padding: 4px;
+  }
+  a {
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 16px;
+    display: flex;
+  }
+  .homepage {
+    background-color: lightblue;
+  }
+  .page1 {
+    background-color: lightcoral;
+  }
+  .page2 {
+    background-color: lightgreen;
+  }
+  .page3 {
+    background-color: lightgrey;
+  }
+  .page4 {
+    background-color: rgb(87, 80, 80);
+  }
+  
+  .page-body {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-}
-  
-.boxItem {
-    width: 0.5rem;
-    height: 0.5rem;
-    background-color: white;
-    padding: 2rem;
-    list-style: none;
-    margin: 0.5rem;
-}
-
-button {
-    color: white;
-    cursor: pointer;
-    padding: 1rem;
-    margin-right: 1.5rem;
-    margin-bottom: 3rem;
-    border: none;
-    font-size: 1.25rem;
-    font-weight: 700;
-    background-color: rgb(48, 155, 197);
-}
+    align-items: center;
+  }
+  .page-title {
+    font-weight: bolder;
+    font-size: 40px;
+  }
+  .page-description {
+    font-weight: lighter;
+  } 
 
 

@@ -1,20 +1,32 @@
-import './App.css'
-import Box1 from './components/Box1';
-import Box2 from './components/Box2';
-import Box3 from './components/Box3';
-import Box4 from './components/Box4';
-import Box5 from './components/Box5';
-import Box6 from './components/Box6';
-import Box7 from './components/Box7';
-import Sta from './components/Sta';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "../src/routes/HomePage";
+import Page1 from "../src/routes/Page1";
+import Page2 from "../src/routes/Page2";
+import Page3 from "../src/routes/Page3";
+import "./App.css"
+import Page4 from "./routes/Page4";
 
 function App() {
   return (
-    <div className='app'>
-      
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/Page1" element={<Page1 />}></Route>
+        <Route path="/Page2" element={<Page2 />}></Route>
+        <Route path="/Page3" element={<Page3 />}></Route>
+        <Route path="/Page4" element={<Page4 />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
+/*
+To perform animation in a <motion.div> we need to add three properties:
+-"Initial" – Initial look of the page as soon as it is loaded
+-"Animate" – The animation that takes place after the initial property is loaded
+-"Exit" – The animation that takes place when the Page is switched or is not being displayed anymore 
+
+*/
 
